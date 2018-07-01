@@ -27,8 +27,7 @@ expression.each do |the_element_of_expression|
       output<<the_element_of_expression
   end
 end
-operands.delete("(")
-operands.delete(")")
+
 loop do
   break if operands[0]==nil
   output<<operands.pop
